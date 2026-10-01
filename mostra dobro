@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void mostra_dobro(int n) {
+    int dobro = n * 2;
+    printf("O dobro de %d e: %d\n", n, dobro);
+}
+int main() {
+    mostra_dobro(5);
+    mostra_dobro(10);
+    mostra_dobro(25);
+
+    int x = 10;
+    printf("\nValor de x antes da chamada: %d\n", x);
+    
+    mostra_dobro(x);
+    
+    printf("Valor de x depois da chamada: %d\n", x);
+
+    return 0;
+}
